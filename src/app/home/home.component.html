@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <h1 class="text-center mt-4">Welcome User</h1>
+    </div>
+    <section>
+    <div class="row">
+        <div class="col mx-4 my-4">
+                <div class="container">
+                    <div class="row" style="height: 80vh;margin-top: -2em;">
+                        <div class="col-md-4" *ngFor="let data of quizList">
+                            <div class="card-flipper effect__hover" data-id="1">
+                                <div class="card__front">
+                                    <div class="card card-01">
+                                        <div class="profile-box-01 h-10 m-auto">
+                                            <img class="card-img-top"
+                                                src={{data.logo}}
+                                                alt="Card image cap">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <!-- <span class="badge-box"><i class="fa fa-check"></i></span> -->
+                                            <h4 class="card-title">{{data.name}}</h4>
+                                            <p class="card-text">Test yourself by attempting this intresting and challenging quiz.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <div class="card card-01">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title">Lets Start the Quiz </h4>
+                                            <p class="card-text">The Quiz consist of 5 question and of 2 minutes long.</p>
+                                            <span class="social-box">
+                                                <a href="#">
+                                                    <i class=""></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class=""></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class=""></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class=""></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class=""></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <a routerLink={{data.route}} class="btn btn-default text-uppercase">Take Quiz</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,57 @@
+<div class="login-page bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <!-- <h3 class="mb-3">Quiz Page</h3> -->
+                <div class="bg-white shadow rounded">
+                    <div class="row mb-4">
+                        <div class="col-md-7 pe-0 fill">
+                                <div class="d-flex justify-content-center row fill">
+                                    <div class="col-md-10 col-lg-10 fill">
+                                        <div class="border fill">
+                                            <div class="question bg-white p-3 border-bottom fill">
+                                                <div class="d-flex flex-row justify-content-between align-items-center mcq ">
+                                                    <h4 class="fill">Quiz Result</h4><span class="text-end">{{result.quizId }} Quiz</span>
+                                                </div>
+                                            </div>
+                                            <div class="question bg-white p-3 border-bottom">
+                                                <div class="container">
+                                                    <div class="row d-flex flex-column justify-content-center text-center fill">
+                                                        <h6>Scores</h6>
+                                                        <h1>{{result.points}}</h1>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col col-md-10 col-lg-10">
+                                                            <h6>Correct Answers: {{result.correctAns}}</h6>
+                                                            <h6>Incorrect Answers: {{result.incorrectAns}}</h6>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="">Verdict</label>
+                                                            <h6>{{verdict}}</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                                                <button replaceUrl="true" routerLink="../" class="btn btn-primary d-flex align-items-center btn-danger"
+                                                    type="button"><i
+                                                        class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;Redo</button>
+                                                    <button replaceUrl="true" routerLink="/"
+                                                    class="btn btn-primary border-success align-items-center btn-success"
+                                                    type="button">Exit<i class="fa fa-angle-right ml-2"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

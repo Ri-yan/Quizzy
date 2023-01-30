@@ -1,0 +1,103 @@
+<div class="add bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="bg-white shadow rounded">
+                    <div class="row mb-4">
+                        <div class="col-md-7 pe-0 fill">
+                            <div class="d-flex justify-content-center row fill">
+                                <div class="col-md-10 col-lg-10 fill">
+                                    <div class="border fill">
+                                        <form [formGroup]="questionform" (ngSubmit)="onSubmit()">
+                                            <div class="question bg-white p-3 border-bottom fill">
+                                            <div
+                                                class="d-flex flex-row justify-content-between align-items-center mcq ">
+                                                <h4 class="fill">Add Question</h4>
+                                                <span class="alert alert-success d-flex justify-content-between" *ngIf="added">Question Added <button class=" float-right btn btn-danger" (click)="remove()">X</button></span>
+                                                    <div class="col-4">
+                                                    <select formControlName="topic" class="form-select" aria-label="Default select example">
+                                                        <option value=null>Open this select menu</option>
+                                                        <option value="angular">Angular</option>
+                                                        <option value="java">Java</option>
+                                                        <option value="css">Css</option>
+                                                        <option value="c#">C#</option>
+                                                        <option value="html">Html</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                            <div class="container" style="background: white;">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Question</label>
+                                                        <input type="text" formControlName="question" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="Enter Question">
+                                                    </div>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputOption1">Option 1</label>
+                                                                    <input formControlName="option1" type="text" class="form-control"
+                                                                        id="exampleInputOption1"
+                                                                        placeholder="Option 1">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputOption1">Option 2</label>
+                                                                    <input formControlName="option2" type="text" class="form-control"
+                                                                        id="exampleInputOption1"
+                                                                        placeholder="Option 2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputOption1">Option 3</label>
+                                                                    <input  formControlName="option3" type="text" class="form-control"
+                                                                        id="exampleInputOption1"
+                                                                        placeholder="Option 3">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputOption1">Option 4</label>
+                                                                    <input formControlName="option4" type="text" class="form-control"
+                                                                        id="exampleInputOption1"
+                                                                        placeholder="Option 4">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        <div
+                                            class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                                            <button (click)="Clear()" class="btn btn-primary d-flex align-items-center btn-danger"
+                                                type="button" ><i
+                                                    class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;Cancel</button>
+                                                    <button type="submit"
+                                                class="btn btn-primary border-success align-items-center btn-success"
+                                                 >Add<i class="fa fa-angle-right ml-2"></i></button>
+                                        </div>
+                                    </form>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

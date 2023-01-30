@@ -1,0 +1,15 @@
+.tittle{
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 1em;
+    font-family: cursive;
+}
+.active{
+    border-bottom: 2px solid;
+}
+.activelink{
+    border-bottom: 2px solid blue;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    color: blue;
+}
